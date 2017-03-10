@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<!--注意顺序-->
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+		<!--导入bootstrap.js：组件  插件-->
+		<script src="js/bootstrap.js"></script>
+		<!-- 绘制图表插件 -->
+		<script src="js/Chart.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<nav class="nav navbar-default">
+			<div class="container">
+				<!--导航条的头部-->
+				<div class="navbar-header">
+					<!--触发器：触发折叠部分显示和隐藏-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#col">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Admin</a>
+				</div>
+				<!--导航链接-->
+				<div id="col" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							
+							<a href="#" ><span class="glyphicon glyphicon-home"></span>后台首页</a>
+						</li>
+						<li><a href="./html/user1.html"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
+						<li><a href="./html/neirong.html"><span class="glyphicon glyphicon-list-alt"></span>内容首页</a></li>
+						<li><a href="./html/biaoqian.html"><span class="glyphicon glyphicon-tag"></span>标签首页</a></li>
+					</ul>
+					<!--导航右边-->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown" ><a herf="#" data-toggle="dropdown">
+							admin
+							<span class="caret"></span>
+						</a>
+						<!--admin的下拉-->
+						<ul class="dropdown-menu" >
+							<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>前台首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span>个人主页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span>个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>账户中心</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span>我的收藏</a></li>
+						</ul>
+						</li>
+						
+						
+						<li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+		<div class="container">
+			<!--警告框-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="alert alert-danger">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>网站程序有漏洞</h4>
+					<p>当前版本程序(v1.22),存在严重安全问题，容易造成攻击，请即刻修复！</p>
+					<!--按钮-->
+					<a class="btn btn-danger" href="#" role="button">立刻修复</a>
+					<button type="button" class="btn btn-default">稍后处理</button>
+					</div>
+				</div>
+			</div>
+			<!--主体内容-->
+			<div class="row">
+				<!--网站数据统计-->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							网站数据统计
+						</div>
+						<div class="panel-body">
+							<table class="table">
+							<thead>
+								<tr>
+									<th>统计项目</th>
+									<th>今日</th>
+									<th>昨日</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>登录会员</th>
+									<td>20220</td>
+									<td>443423</td>
+								</tr>
+								<tr>
+									<th>注册会员</th>
+									<td>2032423</td>
+									<td>434230</td>
+								</tr>
+								<tr>
+									<th>今日发帖</th>
+									<td>2234230</td>
+									<td>403240</td>
+								</tr>
+								<tr>
+									<th>转载次数</th>
+									<td>2342300</td>
+									<td>4043240</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						
+					</div>
+				</div>
+				<!--网站热点-->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							网站热点
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+							<a href="#">
+								<span class="glyphicon glyphicon-list
+glyphicon glyphicon-"></span>	
+泛Mooc职业教育，效果和就业为王
+<span class="pull-right">2015/10/10</span>
+							</a>
+							
+							</li>
+							<li class="list-group-item">
+							<a href="#">
+								<span class="glyphicon glyphicon-list
+glyphicon glyphicon-"></span>	
+泛Mooc职业教育，效果和就业为王
+<span class="pull-right">2015/10/10</span>
+							</a>
+							
+							</li>
+							<li class="list-group-item">
+							<a href="#">
+								<span class="glyphicon glyphicon-list
+glyphicon glyphicon-"></span>	
+泛Mooc职业教育，效果和就业为王
+<span class="pull-right">2015/10/10</span>
+							</a>
+							
+							</li>
+							<li class="list-group-item">
+							<a href="#">
+								<span class="glyphicon glyphicon-list
+glyphicon glyphicon-"></span>	
+泛Mooc职业教育，效果和就业为王
+<span class="pull-right">2015/10/10</span>
+							</a>
+							
+							</li>
+							<li class="list-group-item">
+							<a href="#">
+								<span class="glyphicon glyphicon-list
+glyphicon glyphicon-"></span>	
+泛Mooc职业教育，效果和就业为王
+<span class="pull-right">2015/10/10</span>
+							</a>
+							
+							</li>
+							<li class="list-group-item">
+							<a href="#">
+								<span class="glyphicon glyphicon-list
+glyphicon glyphicon-"></span>	
+泛Mooc职业教育，效果和就业为王
+<span class="pull-right">2015/10/10</span>
+							</a>
+							
+							</li>
+						</ul>
+					
+					</div>
+				</div>
+				
+				
+			</div>
+		
+			<div class="row">
+				<!--今日访客统计-->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							今日访客统计
+						</div>
+						<div class="panel-body">
+							<canvas id="canvas" class="col-md-12"></canvas>	
+						</div>
+						
+					</div>
+				</div>
+				<!--服务器状态-->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							服务器状态
+						</div>
+						<div class="panel-body">
+							
+								<!--进度条-->
+								<p>内存使用率：40%</p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" style="width:40%"></div>	
+								</div>
+								
+								<p>数据库使用率：20%</p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-info progress-bar-striped" style="width:20%"></div>	
+								</div>
+								<p>磁盘使用率：60%</p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-warning progress-bar-striped" style="width:60%"></div>	
+								</div>
+								<p>CPU使用率：80%</p>
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger progress-bar-striped" style="width:80%"></div>	
+								</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="row">
+				
+				<!--团队留言板-->
+				<div class="col-ma-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">团队留言板</div>
+						<div class="panel-body">
+							<!--留言板内容-->
+							<div class="row">
+								<!--左边-->
+								<div class="col-md-6">
+									<div class="media well">
+										<!--图-->
+										<div class="media-left media-middle">
+											<a href="#">
+												<img src="a.png" style="width:60px;height:60px;"/> 
+											</a>
+										</div>
+										<!--字-->
+										<div class="media-body">
+											<h4>卓大哥</h4>
+											<p>技术大哥，今晚请把网站程序升级一下哈，现在的系统有漏洞，安全起见！</p>
+										</div>
+										
+										
+									</div>
+									
+									<div class="media well">
+										<!--图-->
+										<div class="media-left media-middle">
+											<a href="#">
+												<img src="b.png" style="width:60px;height:60px;" /> 
+											</a>
+										</div>
+										<!--字-->
+										<div class="media-body">
+											<h4>程序猿大哥</h4>
+											<p>收到，今晚凌晨2点准时升级！</p>
+										</div>
+										
+										
+									</div>
+									<div class="media well">
+										<!--图-->
+										<div class="media-left media-middle">
+											<a href="#">
+												<img src="b.png" style="width:60px;height:60px;"/> 
+											</a>
+										</div>
+										<!--字-->
+										<div class="media-body">
+											<h4>程序猿大哥</h4>
+											<p>你在站点发一下通知！！！</p>
+										</div>
+										
+										
+									</div>
+									<div class="media well">
+										<!--图-->
+										<div class="media-left media-middle">
+											<a href="#">
+												<img src="a.png" style="width:60px;height:60px;"/> 
+											</a>
+										</div>
+										<!--字-->
+										<div class="media-body">
+											<h4>卓大哥</h4>
+											<p>好的！</p>
+										</div>
+										
+										
+									</div>
+								</div>
+								<!--右边-->
+								<div class="col-md-6">
+									<!--表单-->
+									<form>
+										<div class="form-group  ">
+											<label for="word">留言板内容</label>
+											<textarea class="form-control " id="word" rows="4"></textarea>
+											
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-default " />
+										</div>
+									</form>
+								
+									<!--团队成员手册-->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title">团队成员手册</h3>
+										</div>
+										<div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item">站长(李小龙):  <span class="glyphicon glyphicon-phone"></span>  12312343567</li>
+												<li class="list-group-item">技术(大牛哥):  <span class="glyphicon glyphicon-phone"></span>  12312343567</li>
+												<li class="list-group-item">站长(李小龙):  <span class="glyphicon glyphicon-phone"></span>  12312343567</li>
+												<li class="list-group-item">站长(李小龙):  <span class="glyphicon glyphicon-phone"></span>  12312343567&nbsp;<span class="glyphicon glyphicon-earphone"></span>  213214325345</li>
+												
+												
+												
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--尾部-->
+			<div class="row">
+				<p class="text-center">Copyright&copy;2012-2015 www.baidu.com 粤ICP备13014270号-4</p>
+				
+			</div>
+		</div>
+	</body>
+</html>
